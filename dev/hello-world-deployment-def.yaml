@@ -4,7 +4,7 @@ metadata:
   labels: 
     release: beta
     type: poc
-  name: helloworld-deployment2
+  name: helloworld-deployment
 spec: 
   replicas: 2
   selector: 
