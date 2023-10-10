@@ -11,7 +11,7 @@ spec:
     targetRevision: HEAD
     path: main
   destination: 
-    server: https://helloworld-service.svc
+    server: https://kubernetes.svc
     namespace: myapp
 
   syncPolicy:
