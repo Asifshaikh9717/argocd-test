@@ -9,7 +9,7 @@ spec:
   source:
     repoURL: https://github.com/Asifshaikh9717/argocd-test.git
     targetRevision: HEAD
-    path: dev
+    path: main
   destination: 
     server: https://helloworld-service.svc
     namespace: myapp
