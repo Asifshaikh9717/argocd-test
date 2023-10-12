@@ -36,6 +36,7 @@ jobs:
         run: |
           sed -i 's|image: "asif97/hello-world-node:v1"|image: "asif97/hello-world-node:v2"|' dev/hello-world-deployment-def.yaml
           kubectl apply -f dev/hello-world-deployment-def.yaml
+          kubectl apply -f dev/hello-world-service-def.yaml
       - name: Test service URLs
         run: |
           minikube service list
