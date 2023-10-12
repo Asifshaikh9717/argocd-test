@@ -13,7 +13,7 @@ jobs:
       - name: Set Node.js version
         uses: actions/setup-node@v2
         with:
-          node-version: 18  # Specify the desired Node version
+          node-version: 16  # Specify the desired Node version
 
       - name: Checkout code
         uses: actions/checkout@v2
