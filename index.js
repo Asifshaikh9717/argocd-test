@@ -3,7 +3,7 @@ import http from 'http';
 const server = http.createServer((req, res) => {
   res.statusCode = 200;
   res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World from Kubernetes.....@');
+  res.end('Hello World from Kubernetes...ss..@');
 });
 
 server.listen(8080, function() {
