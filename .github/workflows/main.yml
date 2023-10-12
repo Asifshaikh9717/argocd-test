@@ -35,4 +35,4 @@ jobs:
       - name: Update Kubernetes Deployment
         run: |
           sed -i 's|image: "asif97/hello-world-node:v1"|image: "asif97/hello-world-node:v2"|' dev/deployment.yaml
-          kubectl apply -f dev/deployment.yaml
+          kubectl apply -f dev/hello-world-deployment-def.yaml
