@@ -35,3 +35,16 @@ jobs:
       - name: Update Kubernetes Deployment
         run: |
           kubectl set image deployment/helloworld-deployment2 helloworld-container=asif97/hello-world-node:v2
+
+  # Add a new step to update the deployment
+  update-deployment:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Update Kubernetes Deployment
+        run: |
+          sed -i 's|image: "asif97/hello-world-node:v1"|image: "asif97/hello-world-node:v2"|' dev/deployment.yaml
+          kubectl apply -f dev/deployment.yaml
