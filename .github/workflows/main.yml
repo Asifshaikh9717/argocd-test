@@ -29,4 +29,4 @@ jobs:
 
       - name: Update Kubernetes Deployment
         run: |
-          kubectl set image deployment/helloworld-deployment helloworld-container=asif97/hello-world-node:v2
+          kubectl set image deployment/helloworld-deployment2 helloworld-container=asif97/hello-world-node:v2
