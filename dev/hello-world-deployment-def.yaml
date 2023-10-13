@@ -6,7 +6,7 @@ metadata:
     type: poc
   name: helloworld-deployment2
 spec: 
-  replicas: 3
+  replicas: 2
   selector: 
     matchLabels: 
       type: poc
